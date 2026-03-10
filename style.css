@@ -1,74 +1,90 @@
-/* 基本設定 */
-body {
-    font-family: "Microsoft JhengHei", sans-serif;
-    line-height: 1.6;
+/* 基本重設 */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f7f6;
+    box-sizing: border-box;
+    font-family: "Microsoft JhengHei", sans-serif;
+}
+
+body {
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
     color: #333;
 }
 
 .container {
-    width: 80%;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-/* 頁首設計 */
-header {
-    background: linear-gradient(135deg, #2c3e50, #3498db);
-    color: white;
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
     text-align: center;
-    padding: 60px 0;
-    margin-bottom: 30px;
+    width: 90%;
+    max-width: 500px;
 }
 
 header h1 {
-    margin: 0;
-    font-size: 2.5rem;
-    letter-spacing: 2px;
-}
-
-/* 卡片式佈局 */
-.card {
-    background: white;
-    padding: 25px;
-    margin-bottom: 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-}
-
-h2 {
     color: #2c3e50;
-    border-left: 5px solid #3498db;
-    padding-left: 10px;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
 }
 
-/* 按鈕樣式 */
-.btn {
-    display: inline-block;
-    background: #3498db;
-    color: white;
-    padding: 10px 20px;
+header p {
+    color: #7f8c8d;
+    margin-bottom: 30px;
+}
+
+/* 連結清單 */
+.lab-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.lab-item {
     text-decoration: none;
-    border-radius: 5px;
-    margin-top: 10px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    padding: 15px 20px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
 }
 
-.btn:hover {
-    background: #2980b9;
+.lab-item:hover {
+    background-color: #3498db;
+    border-color: #3498db;
+    transform: translateX(5px);
+}
+
+.lab-item:hover span {
+    color: white;
+}
+
+.lab-number {
+    font-weight: bold;
+    color: #3498db;
+    margin-right: 15px;
+    font-size: 1.2rem;
+}
+
+.lab-name {
+    color: #2c3e50;
+    font-weight: 500;
 }
 
 /* 頁尾 */
 footer {
-    text-align: center;
-    padding: 40px 0;
-    color: #888;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
     font-size: 0.9rem;
+    color: #95a5a6;
+}
+
+footer strong {
+    color: #2c3e50;
 }

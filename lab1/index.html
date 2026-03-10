@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>隨機抽籤器 - 康定富</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="luck-container">
+        <h1>🎲 隨機抽籤器</h1>
+        <p>請在下方輸入名單（每行一個名字）：</p>
+        
+        <textarea id="nameList" placeholder="例如：&#10;小明&#10;小華&#10;康定富"></textarea>
+        
+        <button id="drawBtn">抽出幸運兒！</button>
+
+        <div class="result-box">
+            <span>中獎的是：</span>
+            <h2 id="winner">？</h2>
+        </div>
+
+        <footer>
+            設計者：<strong>康定富</strong>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
